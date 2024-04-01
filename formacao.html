@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio Pessoal</title>
+
+    <style>
+        /*Ativa o dimencionamento da página*/
+         html{
+            box-sizing: border-box;
+        }
+
+        /*Remove margem e colocar cor de fundo no corpo do site*/
+        body{
+            margin: 0;
+            background-color: #EDEDED;
+        }
+
+        /*classe necessária para o funcionamento do grid*/
+        .container{
+            display: grid;
+        }
+
+        /*Estilizando o menu*/
+        .menu{
+            max-height: 50px;
+            grid-column-start: 6;
+            grid-column-end: 12;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            margin-left: 50px;
+            margin-right: 50px;
+            background-color: #484ff3;
+        }
+
+        ul{
+            list-style-type: none;
+            background-color: #484ff3;
+        }
+
+        /*Alinha linhas lateralmente no menu*/
+        li{
+            float: left;
+        }
+
+        /*Utilizando pseudo classe p estilizar os links */
+        a, a:link{
+            text-decoration: none;
+            font-family: Helvetica;
+            font-weight:bolder;
+            margin-left: 35px;
+            margin-right: 35px;
+            padding: 8px 40px;
+            color: #ffffff;
+        }
+
+        /*Aumenta tamanho fonte do link se curso estiver sobre ele*/
+        a:hover {
+            color: white;
+            font-weight:900;
+        }
+        
+        #id2{
+            padding-top: 50px;
+        }
+
+        /*Classe criada para estilizar imagem*/
+        .imagem_ap{
+            grid-column-start: 4;
+            grid-column-end: 6;
+            margin-left: 100px;
+            max-width: 450px;
+            max-height: 300px;
+            width:auto;
+            height: auto;
+            border-radius: 10px;
+            float:left;
+        }
+
+        /*Estiza os textos mostrados no corpo (body)*/
+        .conteudo{
+            grid-column-start: 2;
+            grid-column-end: 11;
+            text-align: left;
+            font-family: Helvetica;
+            margin-top: 15px;
+            margin-left: 60px;
+            margin-right: 50px;
+        }
+
+        /*Estiza o título mostrado no corpo (body)*/
+        .titulo{
+            grid-column-start: 1;
+            grid-column-end: 12;
+            margin-bottom: 50px;
+            font-family: Helvetica;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Menú para acesso a todas as páginas do site-->
+    <nav class="container menu">
+        <ul>
+            <li><a href="index.html">Sobre mim</a></li>
+            <li><a href="formacao.html">Formação acadêmica</a></li>
+            <li><a href="portifolio.html">Portifólio</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!--Descrição da formação acadêmica-->
+    <div class="container" id="id2">
+        <section class="titulo">
+            <h1 style="text-align: center; font-family: Helvetica; font-size: 30px; border-bottom: 2px solid #5C5D73; border-top: 2px solid #5C5D73; margin-left: 50px; margin-right: 50px">Formação</h1>
+        </section>
+
+        <section>
+            <img src="./img/diploma2.png" class="imagem_ap">
+        </section>
+        
+        <section class="conteudo">
+            <table>
+                <tr>
+                    <th>Tecnólogo em Análise e Desenvolvimento de Sistemas</th>
+                </tr>
+                <tr>
+                    <td>Instituição: Centro Universitário Internacional (UNINTER)</td>
+                </tr>
+                <tr>
+                    <td>Previsão do curso: jul. 2023 a dez. 2025</td>
+                </tr>
+            </table>
+            <br>
+            <table>
+                <tr>
+                    <th>Bacharelado em Ciência e Tecnologia</th>
+                </tr>
+                <tr>
+                    <td>Instituição: Universidade Federal do Rio Grade do Norte (UFRN)</td>
+                </tr>
+                <tr>
+                    <td>Duração: fev. 2020 a dez. 2021</td>
+                </tr>
+                <tr>
+                    <td>Curso não finalizado</td>
+                </tr>
+            </table>
+            <br>
+            <table>
+                <tr>
+                    <th>Técnico em Eletromecânica</th>
+                </tr>
+                <tr>
+                    <td>Instituição: Instituto Federal do Rio Grande do Norte (IFRN)</td>
+                </tr>
+                <tr>
+                    <td>Ensino Médio Profissionalizante</td>
+                </tr>
+                <tr>
+                    <td>Período: mai. 2015 a dez. 2018</td>
+                </tr>
+            </table>
+        </section>
+    </div>
+
+</body>
+</html>

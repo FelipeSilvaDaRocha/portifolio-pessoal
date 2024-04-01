@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio Pessoal</title>
+
+    <style>
+        /*Ativa o dimencionamento da página*/
+        html{
+           box-sizing: border-box;
+       }
+
+       /*Remove margem e colocar cor de fundo no corpo do site*/
+       body{
+           margin: 0;
+           background-color: #EDEDED;
+       }
+
+       /*classe necessária para o funcionamento do grid*/
+       .container{
+           display: grid;
+       }
+
+       /*Estilizando o menu*/
+       .menu{
+            max-height: 50px;
+           grid-column-start: 6;
+           grid-column-end: 12;
+           justify-content: center;
+           gap: 10px;
+           padding: 20px;
+           margin-left: 50px;
+           margin-right: 50px;
+           background-color: #484ff3;
+       }
+
+       ul{
+           list-style-type: none;
+           background-color: #484ff3;
+       }
+
+       /*Alinha linhas lateralmente no menu*/
+       li{
+           float: left;
+       }
+
+       /*Utilizando pseudo classe p estilizar os links */
+       a, a:link{
+           text-decoration: none;
+           font-family: Helvetica;
+           font-weight:bolder;
+           margin-left: 35px;
+           margin-right: 35px;
+           padding: 8px 40px;
+           color: #ffffff;
+       }
+
+       /*Aumenta tamanho fonte do link se curso estiver sobre ele*/
+       a:hover {
+            color: white;
+            font-weight:900;
+        }
+
+        /*Classe criada para estilizar imagem*/
+        .imagem_ap{
+            margin-left: 100px;
+            max-width: 3%;
+            max-height: 2%;
+            width:auto;
+            height: auto;
+        }
+
+        /*Estiza os textos mostrados na section onde estão as informações de contato*/
+        .contato{
+            float: left;
+            margin-top: 200px;
+            margin-left: 50px;
+            margin-right: 50px;
+            text-align: center;
+            font-family: Helvetica;
+        }
+
+        /*Estiliza o formulário que insere mensagem*/
+        .form{
+            grid-column-start: 7;
+            grid-column-end: 12;
+            background-color: #ffffff;
+            margin-top: 100px;
+            margin-right: 50px;
+            padding-top: 30px;
+            padding-bottom: 50px;
+            padding-left: 100px;
+            border-radius: 10px;
+            font-family: Helvetica;
+            text-align: justify;
+        }
+
+   </style>
+</head>
+
+<body>
+    <!--Menú para acesso a todas as páginas do site-->
+    <div id="id2">
+        <nav class="container menu">
+            <ul>
+                <li><a href="index.html">Sobre mim</a></li>
+                <li><a href="formacao.html">Formação acadêmica</a></li>
+                <li><a href="portifolio.html">Portifólio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <!--Seção informa contato-->
+    <section class="container contato">
+        <h1>Entre em contato comigo pelas redes sociais</h1>
+        <table>
+            <tr>
+                <td>WhatsApp: (84) 99139-7050</td>
+            </tr>
+            <tr>
+                <td>Instagram: @feliperochapessoa</td>
+            </tr>
+            <tr>
+                <td>E-mail: felipesilvarocha01@gmail.com</td>
+            </tr>
+        </table>
+    </section>
+    
+    <!--Seção com formulário para receber mensagem-->
+    <section class="container form">
+        <form>
+            <h2>Se preferir, me envie uma mensagem</h2>
+            <table>
+                <tr>
+                    <th><label for="nome">Nome:</label></th>
+                    <td><input type="text" name="nome" id="nome"></td>
+                </tr>
+                <tr>
+                    <th><label for="E-mail">E-mail:</label></th>
+                    <td><input type="email" name="e-mail" id="e-mail"></td>
+                </tr>
+                <tr>
+                    <th><label for="assunto">Assunto:</label></th>
+                    <td><input type="text" name="assunto" id="assunto"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><textarea name="msg" rows="6" cols="50">Digite a mensagem aqui... </textarea></th>
+                </tr>
+                <!--Botão enviar ainda não congigurado para guardar informações-->
+                <tr>
+                    <td></td>
+                    <td><button>Enviar</button></td>
+                </tr>
+            </table>
+        </form>
+    </section>
+ 
+</body>
+</html>
