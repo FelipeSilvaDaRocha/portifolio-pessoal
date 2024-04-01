@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio Pessoal</title>
+    
+    <style>
+        /*Ativa o dimencionamento da página*/
+        html{
+            box-sizing: border-box;
+        }
+
+        /*Remove margem e colocar cor de fundo no corpo do site*/
+        body{
+            margin: 0;
+            background-color: #EDEDED;
+        }
+
+        /*classe necessária para o funcionamento do grid*/
+        .container{
+            display: grid;
+        }
+
+        /*Cor de fundo para tag div*/
+        .divP{
+            background-color:#ffffff;
+        }
+
+        #id1{
+            padding-top: 30px;           
+        }
+
+        /*Estilizando o menu*/
+        .menu{
+            max-height: 50px;
+            grid-column-start: 6;
+            grid-column-end: 12;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            margin-left: 50px;
+            margin-right: 50px;
+            background-color: #484ff3;
+        }
+
+        /*Classe criada para estilizar imagem*/
+        .imagem_fe{
+            width: 270px;
+            height: 310px;
+            border-radius:50%;
+            border: 1px solid #5C5D73;
+            margin: 70px;           
+        }
+
+        /*Estiza os textos mostrados no corpo (body)*/
+        .principal{
+            grid-column-start: 4;
+            grid-column-end: 12;
+            padding: 20px;
+            margin-right: 50px;
+            border-radius: 10px;
+            font-family: Helvetica;
+            font-size: 18px;
+            font-weight:normal;
+            text-align: justify;
+        }
+
+        ul{
+            list-style-type: none;   
+        }
+
+        /*Alinha linhas lateralmente no menu*/
+        li{
+            float: left;
+        }
+
+        /*Utilizando pseudo classe p estilizar os links */
+        a, a:link{
+            text-decoration: none;
+            font-family: Helvetica;
+            font-weight:bolder;
+            margin-left: 35px;
+            margin-right: 35px;
+            padding: 8px 40px;
+            color: #ffffff;
+        }
+
+        /*Aumenta tamanho fonte do link se curso estiver sobre ele*/
+        a:hover {
+            color: white;
+            font-weight:900;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!--Menú para acesso a todas as páginas do site-->
+    <nav class="container menu">
+        <ul>
+            <li><a href="index.html">Sobre mim</a></li>
+            <li><a href="formacao.html">Formação acadêmica</a></li>
+            <li><a href="portifolio.html">Portifólio</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!--Div contendo a apresentação-->
+    <div class="container" id="id1">
+        <section>
+            <img src="./img/foto1.png" class="imagem_fe">
+        </section>
+        <section class="principal divP">
+            
+            <h5 style="text-align:start; font-family: Helvetica; font-weight: 400;"> Desenvolvedor em formação</h5>
+            <h1 style="text-align: left; font-family: Helvetica; font-style:normal; font-size: 40px;"> Me chamo Felipe Rocha</h1>
+            <br>
+            <p>Trabalhado há um ano de forma voluntária como diretor do Clube de Desbravadores, tenho contribuído para o desenvolvimento físico, mental e espiritual de juvenis e adolescentes de 10 a 15 anos através de atividades que os incentive a explorar a natureza, servir suas comunidades e crescer em liderança e valores éticos. Gosto de fazer atividades ao ar livre como camping, trilhas, ciclismo e natação. Além disso, sou musicista por paixão e dedico minhas horas vagas para praticar piano ou violão. </p>
+            <p>Tive meu primeiro contato com lógica de programação em 2018 e, a partir de então, me encantei pela área de desenvolvimento de sistemas. Mesmo havendo me dedicado para outros campos de conhecimento, atualmente retomei meus estudos cursando Análise e desenvolvimento de Sistemas pelo Centro Universitário Internacional (Uninter).</p>
+        </section> 
+    </div>
+    
+</body>
+</html>
